@@ -1,0 +1,9 @@
+{% load static%}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+</head>
+<form method="post">
+  {% csrf_token %}
+  <textarea name="message"></textarea>
+  <input type="submit" value="Check for scam" />
+</form>
